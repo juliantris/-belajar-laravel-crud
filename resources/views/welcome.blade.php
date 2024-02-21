@@ -30,6 +30,9 @@
                     @endauth
                 </div>
             @endif
+            @error('name')
+  <div class="alert alert-danger mt-1 mb-1">{{ $message }}</div>
+  @enderror
 
             <div class="max-w-7xl mx-auto p-6 lg:p-8">
                 <div class="flex justify-center">
